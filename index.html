@@ -9,33 +9,96 @@
 </head>
 <body>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
-
+    <header>
+    <picture class="logo">   
+        <img src="assets/images/logo.png" width="200"/>
+    </picture>
     <div class="bar"></div>
-
-    <div class="content">
-        <div class="sidebar">
+    
+    </header>
+    
+    <main class="content">
+        <nav class="sidebar">
             <h2>Título</h2>
             <ul>
-                <li><a href="#">Links</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_Linux">Distribuição Linux</a></li>
             </ul>
-        </div>
+        </nav>
+  
+    <article>
+        <h2 id="arch-linux">Arch Linux?</h2>
+        <p>
+            Arch Linux, ou Arch é uma <a href="https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_Linux">distribuição Linux</a> para computadores com arquitetura x86-64. Desenvolvido inicialmente pelo canadense Judd Vinet, esse sistema operacional se apresenta de maneira diferente de outros, como Windows e MacOS. Além de ser composto predominantemente por software livre e de código aberto, ele envolve contribuições da comunidade. 
+        </p>
 
-        <div class="main">
-            
-        </div>
+        <p>
+            O desenvolvimento é focado na elegância, minimalismo e simplicidade no código, e espera que o usuário faça alguns esforços para compreender o modo de funcionamento do sistema. O gerenciador de pacotes, Pacman, foi escrito especialmente para o Arch Linux e é usado para instalar, remover, pesquisar e atualizar os pacotes do sistema. 
+        </p>
+        
+        <p>
+            O Arch Linux usa o modelo rolling release. Com esse sistema, os usuários podem ter acesso às últimas atualizações estáveis dos pacotes e também evita atualizações muito grandes que podem gerar erros nos componentes do sistema. As imagens de instalação lançadas pela equipe do Arch são apenas capturas instantâneas de imagens de disco atualizadas dos principais componentes do sistema.
+        </p>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
+        <p>
+            Usuários da distribuição podem criar facilmente seus próprios pacotes compatíveis com o pacman usando ferramentas como o "Arch Build System", funcionalidade esta que ajudou a sustentar o AUR, um repositório de pacotes criados por usuários que complementam os repositórios oficiais. 
+        </p>
+
+
+        <h2 id="filosofia">Filosofia</h2>
+
+        <p>
+            O Arch Linux é baseado em 5 pontos: simplicidade, modernidade, pragmatismo, centralidade no usuário e versatilidade.
+        </p>
+
+        <p>
+            O Arch Linux tem foco na simplicidade do design. Isso significa que o foco principal é criar um ambiente que é direto e relativamente simples de se adaptar, ao invés de oferecer, por padrão, ferramentas que trazem interface gráfica no estilo "aponte e clique" que escondem os arquivos de configuração do usuário. O pacman, por exemplo, não possui uma interface oficial, embora seja composto de uma ótima documentação, arquivos de configuração simples, comentários bem definidos e facilmente organizados para fácil acesso e edição. Por isso, ganhou respeito como uma distribuição para usuários intermediários e avançados, e que não têm medo da linha de comando. 
+        </p>
+
+        <p>
+            Segundo Aaron Griffin, ao depender de ferramentas para esconder a complexidade do sistema, o resultado será um sistema mais complexo ainda. O uso de camadas para esconder o sistema interno nunca foi uma boa ideia. Ao invés disso, os componentes internos devem ser organizados de um jeito que não precisem ser escondidos. 
+        </p>
+
+        <h2 id="gerenciamento-de-pacotes">Gerenciamento de Pacotes</h2>
+        <p>
+            Arch é baseado principalmente em pacotes binários. Esses pacotes são gerenciados pela ferramenta Pacman que conduz a instalação de pacotes, atualizações do sistema, remoção de programas e consultas ao banco de dados de pacotes. Os pacotes binários são compilados de forma otimizada para processadores i686. Também podem ser construídos a partir dos códigos fonte através do ABS (Arch Linux Build System), que trabalha nos moldes do Ports.
+        </p>
+
+        <p>
+            Os pacotes vêm da árvore de pacotes do Arch Linux e de seus mirrors. Atualmente existem 5 diferentes grupos:
+
             <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
-    </div>
+                <li><i>Core</i> - Contém todos os pacotes necessários para o sistema Linux básico.</li>
+                <br>
+                <li><i>Extra</i> - Contém pacotes que não são necessários para o sistema base, mas adicionam funcionalidades extras.</li>
+                <br>
+                <li><i>Multilib</i> - Possui as bibliotecas 32bits para 64bits, ou vice-versa, permitindo o uso simultâneo de aplicações 32bits ou 64bits. Útil para programas que só estejam disponíveis justamente na arquitetura oposta.</li>
+                <br>
+                <li><i>Community</i> - Contém pacotes construídos pela comunidade e aprovada pelos usuários confiáveis.</li>
+                <br>
+                <li><i>Testing</i> - Contém pacotes que são instáveis e ainda estão sendo testados antes de serem adicionados ao grupo extra ou core.</li>
+                <br>
+                <li><i>Community Testing</i> - Este repositório é similar ao Testing, mas para pacotes que são candidatos para o repositório community.</li>
+                <br>
+                <li><i>Multilib Testing</i> - Este repositório é similar ao Testing, mas para pacotes que são candidatos para o repositório multilib.</li>
+                <br>
+            </ul> 
+
+    Existem repositórios não oficiais também e são integrados à árvore oficial. 
+        </p>
+    </article>
+
+    
+    <nav class="anchors">
+        <h2>Neste Artigo</h2>
+        <ul>
+            <li><a href="#arch-linux">Arch Linux</a></li>
+            <li><a href="#filosofia">Filosofia</a></li>
+            <li><a href="#gerenciamento-de-pacotes">Gerenciamento de Pacotes</a></li>
+        </ul>
+    </nav>
+
+       
+    </main>
 
     <div class="footer">
 
